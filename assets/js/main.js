@@ -10,3 +10,12 @@ toggleBtn.addEventListener('click', (e) => {
 closeBtn.addEventListener('click', (e) => {
     navLinks.classList.remove('show-navlinks');
 });
+
+//  scroll to the
+const links = document.querySelectorAll('.nav-link');
+links.forEach((item) => {
+    item.addEventListener('click', () => {
+        const el = document.getElementById(item.getAttribute('data-link'));
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+});

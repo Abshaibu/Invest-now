@@ -141,6 +141,7 @@ header {
     padding: .6rem;
     border-radius: 5px;
     transition: all .4s ease-in;
+    cursor: pointer;
 }
 
 .nav-link:hover {
@@ -334,6 +335,12 @@ textarea:focus {
     max-width: 153px;
     padding: .8rem 1rem;
     border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+
+.submit-btn:hover {
+    background: #3b4574;
 }
 
 /*   Footer*/
