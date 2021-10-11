@@ -1,6 +1,7 @@
 const toggleBtn = document.querySelector('.toggle-btn');
 const navLinks = document.querySelector('.nav-links');
 const closeBtn = document.querySelector('.close-btn');
+const links = document.querySelectorAll('.nav-link');
 
 // menu toggler
 toggleBtn.addEventListener('click', (e) => {
@@ -12,10 +13,10 @@ closeBtn.addEventListener('click', (e) => {
 });
 
 //  scroll to the
-const links = document.querySelectorAll('.nav-link');
 links.forEach((item) => {
     item.addEventListener('click', () => {
         const el = document.getElementById(item.getAttribute('data-link'));
+        navLinks.classList.remove('show-navlinks');
         el.scrollIntoView({ behavior: "smooth", block: "start" });
     });
 });
